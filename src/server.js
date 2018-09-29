@@ -35,7 +35,6 @@ const handlePost = (request, response, parsedUrl) => {
 
     // on end of upload stream.
     request.on('end', () => {
-
       const bodyString = Buffer.concat(body).toString();
 
       const bodyParams = query.parse(bodyString);
